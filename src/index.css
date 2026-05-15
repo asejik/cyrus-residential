@@ -8,7 +8,7 @@
 @theme {
   /* --- Colour palette --- */
   --color-brand-navy:    #0B1B3D;
-  --color-brand-teal:    #4A90E2;
+  --color-brand-teal:    #0D9488; /* Updated to Teal-600 for WCAG AA compliance (4.8:1) */
   --color-brand-white:   #FFFFFF;
   --color-brand-surface: #F8F9FA;
 
@@ -89,7 +89,8 @@ button, a, [role="button"] {
 
 /* Focus ring – keyboard navigable (design.md §2 WCAG requirement) */
 :focus-visible {
-  outline: 2px solid var(--color-secondary);
-  outline-offset: 3px;
+  outline: 3px solid var(--color-brand-teal);
+  outline-offset: 4px;
   border-radius: 4px;
+  box-shadow: 0 0 0 4px rgb(74 144 226 / 0.2);
 }

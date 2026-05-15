@@ -28,7 +28,6 @@ export function ContactForm(): ReactElement {
 
       // Mock successful submission if keys are missing (for local testing/dev)
       if (!serviceId || !templateId || !publicKey) {
-        console.warn('EmailJS keys missing. Mocking successful submission...')
         return new Promise((resolve) => setTimeout(resolve, 2000))
       }
 
@@ -122,7 +121,7 @@ export function ContactForm(): ReactElement {
             type="text"
             disabled={mutation.isPending || isThrottled}
             className={cn(
-              "w-full px-4 py-3 rounded-lg border bg-brand-surface transition-all outline-none focus:ring-2 focus:ring-brand-teal/20",
+              "w-full px-4 py-3 rounded-lg border bg-brand-surface transition-all outline-none focus:ring-2 focus:ring-brand-teal/40",
               errors.name ? "border-red-300 focus:border-red-400" : "border-gray-200 focus:border-brand-teal"
             )}
             placeholder="John Smith"
@@ -146,7 +145,7 @@ export function ContactForm(): ReactElement {
             type="email"
             disabled={mutation.isPending || isThrottled}
             className={cn(
-              "w-full px-4 py-3 rounded-lg border bg-brand-surface transition-all outline-none focus:ring-2 focus:ring-brand-teal/20",
+              "w-full px-4 py-3 rounded-lg border bg-brand-surface transition-all outline-none focus:ring-2 focus:ring-brand-teal/40",
               errors.email ? "border-red-300 focus:border-red-400" : "border-gray-200 focus:border-brand-teal"
             )}
             placeholder="john@organisation.co.uk"
@@ -172,7 +171,7 @@ export function ContactForm(): ReactElement {
             type="tel"
             disabled={mutation.isPending || isThrottled}
             className={cn(
-              "w-full px-4 py-3 rounded-lg border bg-brand-surface transition-all outline-none focus:ring-2 focus:ring-brand-teal/20",
+              "w-full px-4 py-3 rounded-lg border bg-brand-surface transition-all outline-none focus:ring-2 focus:ring-brand-teal/40",
               errors.phone ? "border-red-300 focus:border-red-400" : "border-gray-200 focus:border-brand-teal"
             )}
             placeholder="07123 456 789"
@@ -194,7 +193,7 @@ export function ContactForm(): ReactElement {
             id="serviceInterest"
             disabled={mutation.isPending || isThrottled}
             className={cn(
-              "w-full px-4 py-3 rounded-lg border bg-brand-surface transition-all outline-none focus:ring-2 focus:ring-brand-teal/20 appearance-none",
+              "w-full px-4 py-3 rounded-lg border bg-brand-surface transition-all outline-none focus:ring-2 focus:ring-brand-teal/40 appearance-none",
               errors.serviceInterest ? "border-red-300 focus:border-red-400" : "border-gray-200 focus:border-brand-teal"
             )}
           >
@@ -224,7 +223,7 @@ export function ContactForm(): ReactElement {
           rows={5}
           disabled={mutation.isPending || isThrottled}
           className={cn(
-            "w-full px-4 py-3 rounded-lg border bg-brand-surface transition-all outline-none focus:ring-2 focus:ring-brand-teal/20 resize-none",
+            "w-full px-4 py-3 rounded-lg border bg-brand-surface transition-all outline-none focus:ring-2 focus:ring-brand-teal/40 resize-none",
             errors.message ? "border-red-300 focus:border-red-400" : "border-gray-200 focus:border-brand-teal"
           )}
           placeholder="How can our consultancy team support you?"
