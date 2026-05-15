@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+/* ============================================================
+   CYRUS RESIDENTIAL CARE – Design Token Layer
+   Palette source: design.md §2
+   ============================================================ */
+@theme {
+  /* --- Colour palette --- */
+  --color-brand-navy:    #0B1B3D;
+  --color-brand-teal:    #4A90E2;
+  --color-brand-white:   #FFFFFF;
+  --color-brand-surface: #F8F9FA;
+
+  /* Semantic aliases */
+  --color-primary:    var(--color-brand-navy);
+  --color-secondary:  var(--color-brand-teal);
+  --color-background: var(--color-brand-white);
+  --color-surface:    var(--color-brand-surface);
+
+  /* Teal scale for hover / active states */
+  --color-teal-50:  #EBF4FF;
+  --color-teal-100: #C5DCFA;
+  --color-teal-200: #9EC3F6;
+  --color-teal-300: #77AAF2;
+  --color-teal-400: #4A90E2;
+  --color-teal-500: #2A72C8;
+  --color-teal-600: #1B56A5;
+
+  /* Navy scale */
+  --color-navy-900: #0B1B3D;
+  --color-navy-800: #122348;
+  --color-navy-700: #1A2E5E;
+
+  /* --- Typography --- */
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body:    'Inter', sans-serif;
+
+  /* Fluid type scale */
+  --text-display: clamp(2.25rem, 5vw, 3.75rem);
+  --text-h1:      clamp(1.875rem, 4vw, 3rem);
+  --text-h2:      clamp(1.5rem, 3vw, 2.25rem);
+  --text-h3:      clamp(1.25rem, 2.5vw, 1.75rem);
+
+  /* --- Spacing & layout --- */
+  --radius-card: 0.75rem;
+  --shadow-card: 0 4px 24px -4px rgb(11 27 61 / 0.12);
+  --shadow-nav:  0 2px 16px -2px rgb(11 27 61 / 0.1);
+
+  /* --- Transition defaults --- */
+  --transition-ui: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* WCAG 2.2 AA minimum touch target */
+  --touch-target: 2.75rem; /* 44px */
+}
+
+/* ============================================================
+   Global resets & base styles
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Ensure every interactive element meets WCAG 2.2 AA touch target */
+button, a, [role="button"] {
+  min-height: var(--touch-target);
+  min-width: var(--touch-target);
+}
+
+/* Focus ring – keyboard navigable (design.md §2 WCAG requirement) */
+:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
