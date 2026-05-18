@@ -52,17 +52,17 @@ export function Navbar(): ReactElement {
         {/* Logo */}
         <Link 
           to="/" 
-          className="flex items-center gap-3 group outline-none focus-visible:ring-2 focus-visible:ring-secondary rounded-lg animate-in fade-in duration-500"
+          className="flex items-center group outline-none focus-visible:ring-2 focus-visible:ring-secondary rounded-lg animate-in fade-in duration-500"
           aria-label="Cyrus Home"
         >
           <img 
             src="/logo.png" 
             alt="Cyrus Logo" 
-            className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
+            className={cn(
+              "w-auto object-contain transition-all duration-300 group-hover:scale-105",
+              isScrolled || isOpen ? "h-12" : "h-14 lg:h-16"
+            )}
           />
-          <span className="font-heading font-bold text-xl tracking-tight text-brand-navy">
-            CYRUS<span className="text-brand-teal ml-1 hidden sm:inline">RCC</span>
-          </span>
         </Link>
 
         {/* Desktop Navigation */}

@@ -11,9 +11,12 @@ export function Footer(): ReactElement {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Column 1: Brand & Mission */}
           <div className="space-y-6">
-            <Link to="/" className="flex items-center gap-3 outline-none focus-visible:ring-2 focus-visible:ring-secondary rounded-lg">
-              <img src="/logo.png" alt="Cyrus Logo" className="h-10 w-auto object-contain bg-white/5 p-1 rounded" />
-              <span className="font-heading font-bold text-xl tracking-tight">CYRUS RCC</span>
+            <Link to="/" className="inline-block outline-none focus-visible:ring-2 focus-visible:ring-secondary rounded-xl">
+              <img 
+                src="/logo.png" 
+                alt="Cyrus Logo" 
+                className="h-16 lg:h-20 w-auto object-contain bg-white p-2 rounded-xl shadow-md transition-transform duration-300 hover:scale-105" 
+              />
             </Link>
             <p className="text-white/70 text-sm leading-relaxed max-w-xs">
               <strong>Supporting Excellence in Children’s Residential Care</strong>. Professional consultancy and compliance support dedicated to elevating the standards of children's residential care across England.
