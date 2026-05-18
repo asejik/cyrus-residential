@@ -17,9 +17,9 @@ export function Layout(): ReactElement {
       
       {/* 
         Main content area 
-        The pt-20 / pt-16 accounts for the fixed navbar height 
+        The pt-32 accounts for the fixed navbar height (128px)
       */}
-      <main className="flex-grow pt-20 lg:pt-16">
+      <main className="flex-grow pt-32">
         <Outlet />
       </main>
 

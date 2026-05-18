@@ -42,10 +42,10 @@ export function Navbar(): ReactElement {
   return (
     <nav
       className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 h-20 flex items-center',
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 flex items-center bg-white',
         isScrolled || isOpen
-          ? 'bg-white shadow-nav h-16'
-          : 'bg-transparent h-20'
+          ? 'shadow-nav h-24'
+          : 'border-b border-gray-100 h-32'
       )}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
@@ -60,7 +60,7 @@ export function Navbar(): ReactElement {
             alt="Cyrus Logo" 
             className={cn(
               "w-auto object-contain transition-all duration-300 group-hover:scale-105",
-              isScrolled || isOpen ? "h-12" : "h-14 lg:h-16"
+              isScrolled || isOpen ? "h-12 lg:h-20" : "h-16 lg:h-28"
             )}
           />
         </Link>
@@ -73,7 +73,7 @@ export function Navbar(): ReactElement {
                 <Link
                   to={link.href}
                   className={cn(
-                    'text-sm font-medium tracking-wide transition-colors hover:text-brand-teal py-2 outline-none focus-visible:text-brand-teal',
+                    'text-sm font-medium tracking-wide transition-colors hover:text-brand-teal outline-none focus-visible:text-brand-teal flex items-center justify-center min-h-[var(--touch-target)]',
                     location.pathname === link.href ? 'text-brand-teal' : 'text-brand-navy/80'
                   )}
                 >
