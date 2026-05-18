@@ -1,6 +1,6 @@
 import { type ReactElement } from 'react'
 import { Link } from 'react-router-dom'
-import { Mail, MapPin, ExternalLink } from 'lucide-react'
+import { Mail, MapPin, ExternalLink, Phone } from 'lucide-react'
 
 export function Footer(): ReactElement {
   const currentYear = new Date().getFullYear()
@@ -11,14 +11,12 @@ export function Footer(): ReactElement {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Column 1: Brand & Mission */}
           <div className="space-y-6">
-            <Link to="/" className="flex items-center gap-2 outline-none focus-visible:ring-2 focus-visible:ring-secondary rounded-lg">
-              <div className="w-8 h-8 bg-brand-teal rounded flex items-center justify-center">
-                <span className="text-brand-navy font-bold text-lg font-heading">C</span>
-              </div>
+            <Link to="/" className="flex items-center gap-3 outline-none focus-visible:ring-2 focus-visible:ring-secondary rounded-lg">
+              <img src="/logo.png" alt="Cyrus Logo" className="h-10 w-auto object-contain bg-white/5 p-1 rounded" />
               <span className="font-heading font-bold text-xl tracking-tight">CYRUS RCC</span>
             </Link>
             <p className="text-white/70 text-sm leading-relaxed max-w-xs">
-              Professional consultancy and compliance support dedicated to elevating the standards of children's residential care across England.
+              <strong>Supporting Excellence in Children’s Residential Care</strong>. Professional consultancy and compliance support dedicated to elevating the standards of children's residential care across England.
             </p>
           </div>
 
@@ -72,13 +70,19 @@ export function Footer(): ReactElement {
           <div className="space-y-6">
             <h3 className="font-heading font-bold text-lg">Get In Touch</h3>
             <div className="space-y-4">
-              <a href="mailto:info@cyrusrcc.co.uk" className="flex items-start gap-3 group outline-none">
-                <Mail className="w-5 h-5 text-brand-teal mt-0.5" />
-                <span className="text-white/70 group-hover:text-white transition-colors text-sm">info@cyrusrcc.co.uk</span>
+              <a href="mailto:info@cyruscareconsultancy.co.uk" className="flex items-start gap-3 group outline-none">
+                <Mail className="w-5 h-5 text-brand-teal mt-0.5 shrink-0" />
+                <span className="text-white/70 group-hover:text-white transition-colors text-sm break-all">info@cyruscareconsultancy.co.uk</span>
+              </a>
+              <a href="tel:+447919800304" className="flex items-start gap-3 group outline-none">
+                <Phone className="w-5 h-5 text-brand-teal mt-0.5 shrink-0" />
+                <span className="text-white/70 group-hover:text-white transition-colors text-sm">+447919 800304</span>
               </a>
               <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-brand-teal mt-0.5" />
-                <span className="text-white/70 text-sm">Serving Care Providers Across England</span>
+                <MapPin className="w-5 h-5 text-brand-teal mt-0.5 shrink-0" />
+                <span className="text-white/70 text-sm leading-relaxed">
+                  128 Griffin Court, Black Eagle Drive, Northfleet, Kent, DA11 9AP
+                </span>
               </div>
             </div>
             

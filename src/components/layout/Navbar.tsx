@@ -52,12 +52,14 @@ export function Navbar(): ReactElement {
         {/* Logo */}
         <Link 
           to="/" 
-          className="flex items-center gap-2 group outline-none focus-visible:ring-2 focus-visible:ring-secondary rounded-lg"
+          className="flex items-center gap-3 group outline-none focus-visible:ring-2 focus-visible:ring-secondary rounded-lg animate-in fade-in duration-500"
           aria-label="Cyrus Home"
         >
-          <div className="w-10 h-10 bg-brand-navy rounded-lg flex items-center justify-center transition-transform group-hover:scale-105">
-            <span className="text-brand-teal font-bold text-xl font-heading">C</span>
-          </div>
+          <img 
+            src="/logo.png" 
+            alt="Cyrus Logo" 
+            className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
+          />
           <span className="font-heading font-bold text-xl tracking-tight text-brand-navy">
             CYRUS<span className="text-brand-teal ml-1 hidden sm:inline">RCC</span>
           </span>

@@ -1,5 +1,5 @@
 import { type ReactElement } from 'react'
-import { Mail, MapPin, ShieldAlert, Clock, Building2 } from 'lucide-react'
+import { Mail, MapPin, ShieldAlert, Clock, Building2, Phone } from 'lucide-react'
 import { usePageMeta } from '@/hooks/usePageMeta'
 import { ContactForm } from '@/components/common/ContactForm'
 
@@ -42,12 +42,36 @@ export default function ContactPage(): ReactElement {
                     </div>
                     Email Us
                   </div>
-                  <a href="mailto:info@cyrusrcc.co.uk" className="text-gray-500 hover:text-brand-teal transition-colors block text-sm">
-                    info@cyrusrcc.co.uk
+                  <a href="mailto:info@cyruscareconsultancy.co.uk" className="text-gray-500 hover:text-brand-teal transition-colors block text-sm break-all">
+                    info@cyruscareconsultancy.co.uk
                   </a>
                 </div>
 
                 <div className="space-y-3">
+                  <div className="flex items-center gap-3 text-brand-navy font-bold">
+                    <div className="w-10 h-10 bg-white rounded-lg shadow-sm flex items-center justify-center text-brand-teal">
+                      <Phone className="w-5 h-5" />
+                    </div>
+                    Call Us
+                  </div>
+                  <a href="tel:+447919800304" className="text-gray-500 hover:text-brand-teal transition-colors block text-sm">
+                    +447919 800304
+                  </a>
+                </div>
+
+                <div className="space-y-3 sm:col-span-2">
+                  <div className="flex items-center gap-3 text-brand-navy font-bold">
+                    <div className="w-10 h-10 bg-white rounded-lg shadow-sm flex items-center justify-center text-brand-teal">
+                      <MapPin className="w-5 h-5" />
+                    </div>
+                    Our Address
+                  </div>
+                  <p className="text-gray-500 text-sm leading-relaxed">
+                    128 Griffin Court, Black Eagle Drive, Northfleet, Kent, DA11 9AP
+                  </p>
+                </div>
+
+                <div className="space-y-3 sm:col-span-2">
                   <div className="flex items-center gap-3 text-brand-navy font-bold">
                     <div className="w-10 h-10 bg-white rounded-lg shadow-sm flex items-center justify-center text-brand-teal">
                       <Clock className="w-5 h-5" />

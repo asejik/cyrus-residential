@@ -103,7 +103,7 @@ export function ContactForm(): ReactElement {
           <div>
             <p className="font-bold">Submission Failed</p>
             <p className="opacity-80">
-              We encountered an error sending your message. Please try again or call us directly at 07xxx xxx xxx.
+              We encountered an error sending your message. Please try again or call us directly at +447919 800304.
             </p>
           </div>
         </div>

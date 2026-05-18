@@ -57,7 +57,7 @@ export default function HomePage(): ReactElement {
         <div className="container mx-auto px-6 relative z-10 py-24">
           <div className="max-w-3xl space-y-8 animate-in fade-in slide-in-from-left duration-700">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-teal/10 border border-brand-teal/20 text-brand-teal text-xs font-bold tracking-widest uppercase">
-              Compliance Excellence
+              Supporting Excellence in Children’s Residential Care
             </div>
             <h1 
               id="hero-heading"
