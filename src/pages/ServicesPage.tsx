@@ -10,7 +10,7 @@ const services = [
     subtitle: 'Independent Monthly Oversight',
     description: 'Our Regulation 44 visits provide a robust, independent evaluation of your home’s care standards. We focus on the welfare of children, the quality of care provided, and the effectiveness of management.',
     icon: ShieldCheck,
-    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1000',
+    image: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&q=80&w=1000',
     includes: [
       'Monthly rigorous independent inspections',
       'Interviews with children, staff, and parents',
@@ -25,7 +25,7 @@ const services = [
     subtitle: 'Strategic Growth & Management',
     description: 'We partner with providers to strengthen their operational foundations. Whether you are opening a new home or looking to improve a "Requires Improvement" rating, our consultancy provides a roadmap to success.',
     icon: FileText,
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1000',
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1000',
     includes: [
       'Strategic planning for new providers',
       'Service development and improvement plans',
@@ -40,7 +40,7 @@ const services = [
     subtitle: 'Preparedness & Quality Assurance',
     description: 'Prepare your team for the pressures of a real Ofsted inspection. Our mock inspections mirror the current Social Care Common Inspection Framework (SCCIF), identifying blind spots before the inspectors arrive.',
     icon: Search,
-    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1000',
+    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1000',
     includes: [
       'Full "Ofsted-style" evaluation across all key areas',
       'Feedback sessions for managers and staff',
@@ -55,7 +55,7 @@ const services = [
     subtitle: 'Systems & Data Integrity',
     description: 'A deep-dive audit service ensuring your administrative and operational systems are watertight. We review your records to ensure they meet the rigorous statutory requirements of the Children’s Homes Regulations.',
     icon: ClipboardCheck,
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000',
+    image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=1000',
     includes: [
       'Staff recruitment and file auditing',
       'Safeguarding and incident record reviews',

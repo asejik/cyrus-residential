@@ -46,7 +46,7 @@ export default function HomePage(): ReactElement {
         {/* Background Image Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1600" 
+            src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&q=80&w=1600" 
             alt="" 
             className="w-full h-full object-cover opacity-20"
             aria-hidden="true"
@@ -116,8 +116,8 @@ export default function HomePage(): ReactElement {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000" 
-                alt="Modern professional building architecture" 
+                src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=1000" 
+                alt="Cozy modern family living room interior representing residential home environment" 
                 className="rounded-2xl shadow-2xl relative z-10"
               />
               <div className="absolute -top-6 -right-6 w-32 h-32 bg-brand-surface rounded-full z-0" />

@@ -38,8 +38,8 @@ export default function AboutPage(): ReactElement {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative order-2 lg:order-1">
               <img 
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1000" 
-                alt="Professional team meeting in a clean office" 
+                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=1000" 
+                alt="A professional consultant/manager explaining care compliance and regulatory guidelines warmly" 
                 className="rounded-2xl shadow-2xl relative z-10"
               />
               <div className="absolute -bottom-8 -right-8 w-48 h-48 bg-brand-surface rounded-2xl z-0 border border-gray-100" />
