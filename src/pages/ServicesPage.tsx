@@ -10,7 +10,7 @@ const services = [
     subtitle: 'Independent Monthly Oversight',
     description: 'Our Regulation 44 visits provide a robust, independent evaluation of your home’s care standards. We focus on the welfare of children, the quality of care provided, and the effectiveness of management.',
     icon: ShieldCheck,
-    image: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&q=80&w=1000',
+    image: 'https://images.unsplash.com/photo-1507297044195-4a5b6c75b7e4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     includes: [
       'Monthly rigorous independent inspections',
       'Interviews with children, staff, and parents',
@@ -25,7 +25,7 @@ const services = [
     subtitle: 'Strategic Growth & Management',
     description: 'We partner with providers to strengthen their operational foundations. Whether you are opening a new home or looking to improve a "Requires Improvement" rating, our consultancy provides a roadmap to success.',
     icon: FileText,
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1000',
+    image: 'https://images.unsplash.com/photo-1668092548064-730e05fd0324?q=80&w=1167&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     includes: [
       'Strategic planning for new providers',
       'Service development and improvement plans',
@@ -40,7 +40,7 @@ const services = [
     subtitle: 'Preparedness & Quality Assurance',
     description: 'Prepare your team for the pressures of a real Ofsted inspection. Our mock inspections mirror the current Social Care Common Inspection Framework (SCCIF), identifying blind spots before the inspectors arrive.',
     icon: Search,
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1000',
+    image: 'https://images.unsplash.com/photo-1758691737124-05c5bffe46f0?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     includes: [
       'Full "Ofsted-style" evaluation across all key areas',
       'Feedback sessions for managers and staff',
@@ -55,7 +55,7 @@ const services = [
     subtitle: 'Systems & Data Integrity',
     description: 'A deep-dive audit service ensuring your administrative and operational systems are watertight. We review your records to ensure they meet the rigorous statutory requirements of the Children’s Homes Regulations.',
     icon: ClipboardCheck,
-    image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=1000',
+    image: 'https://images.unsplash.com/photo-1707157284454-553ef0a4ed0d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     includes: [
       'Staff recruitment and file auditing',
       'Safeguarding and incident record reviews',
@@ -79,7 +79,7 @@ export default function ServicesPage(): ReactElement {
         <div className="container mx-auto px-6 relative z-10">
           <h1 className="text-white text-h1 font-bold mb-6">Our Services</h1>
           <p className="text-white/60 max-w-2xl mx-auto text-lg leading-relaxed">
-            Professional, independent regulatory services designed to ensure your home 
+            Professional, independent regulatory services designed to ensure your home
             remains compliant and provides the highest quality of care.
           </p>
         </div>
@@ -93,17 +93,16 @@ export default function ServicesPage(): ReactElement {
       <section className="py-24 space-y-32">
         {services.map((service, index) => (
           <div key={service.id} className="container mx-auto px-6">
-            <article 
-              className={`grid lg:grid-cols-2 gap-16 items-center ${
-                index % 2 === 1 ? 'lg:flex-row-reverse' : ''
-              }`}
+            <article
+              className={`grid lg:grid-cols-2 gap-16 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''
+                }`}
             >
               {/* Image side */}
               <div className={`relative ${index % 2 === 1 ? 'lg:order-2' : 'lg:order-1'}`}>
                 <div className="relative z-10">
-                  <img 
-                    src={service.image} 
-                    alt={service.title} 
+                  <img
+                    src={service.image}
+                    alt={service.title}
                     className="rounded-2xl shadow-2xl w-full aspect-[4/3] object-cover"
                   />
                   {/* Floating icon badge */}
@@ -112,9 +111,8 @@ export default function ServicesPage(): ReactElement {
                   </div>
                 </div>
                 {/* Decorative background shape */}
-                <div className={`absolute -bottom-10 -right-10 w-2/3 h-2/3 bg-brand-surface rounded-2xl -z-10 ${
-                  index % 2 === 1 ? 'lg:-left-10 lg:right-auto' : ''
-                }`} />
+                <div className={`absolute -bottom-10 -right-10 w-2/3 h-2/3 bg-brand-surface rounded-2xl -z-10 ${index % 2 === 1 ? 'lg:-left-10 lg:right-auto' : ''
+                  }`} />
               </div>
 
               {/* Text side */}
@@ -128,7 +126,7 @@ export default function ServicesPage(): ReactElement {
                   </h2>
                   <div className="h-1.5 w-20 bg-brand-teal rounded-full" />
                 </div>
-                
+
                 <p className="text-gray-600 text-lg leading-relaxed">
                   {service.description}
                 </p>
@@ -172,7 +170,7 @@ export default function ServicesPage(): ReactElement {
               <ShieldCheck className="w-16 h-16 text-brand-teal" />
             </div>
             <h2 className="text-brand-navy text-h3 font-bold max-w-2xl mx-auto">
-              Our services are rooted in the belief that every child deserves a safe, 
+              Our services are rooted in the belief that every child deserves a safe,
               nurturing environment where they can thrive.
             </h2>
             <div className="flex justify-center gap-4">

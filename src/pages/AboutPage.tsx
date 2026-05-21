@@ -37,14 +37,14 @@ export default function AboutPage(): ReactElement {
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative order-2 lg:order-1">
-              <img 
-                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=1000" 
-                alt="A professional consultant/manager explaining care compliance and regulatory guidelines warmly" 
+              <img
+                src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="A professional consultant/manager explaining care compliance and regulatory guidelines warmly"
                 className="rounded-2xl shadow-2xl relative z-10"
               />
               <div className="absolute -bottom-8 -right-8 w-48 h-48 bg-brand-surface rounded-2xl z-0 border border-gray-100" />
             </div>
-            
+
             <div className="space-y-8 order-1 lg:order-2">
               <div className="space-y-4">
                 <h2 id="mission-heading" className="text-brand-navy text-h2 font-bold leading-tight">
@@ -52,16 +52,16 @@ export default function AboutPage(): ReactElement {
                 </h2>
                 <div className="h-1.5 w-20 bg-brand-teal rounded-full" />
               </div>
-              
+
               <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
                 <p>
-                  At Cyrus Residential Care Consultancy, we are passionate about elevating the standards of 
-                  care for children. Our team brings together years of front-line experience and 
+                  At Cyrus Residential Care Consultancy, we are passionate about elevating the standards of
+                  care for children. Our team brings together years of front-line experience and
                   regulatory expertise to help providers build safer, more effective homes.
                 </p>
                 <p>
-                  We act as a critical friend—providing the rigorous independent oversight required by 
-                  law, while offering the strategic guidance needed to navigate the complexities 
+                  We act as a critical friend—providing the rigorous independent oversight required by
+                  law, while offering the strategic guidance needed to navigate the complexities
                   of Ofsted inspections and statutory compliance.
                 </p>
               </div>
@@ -74,18 +74,18 @@ export default function AboutPage(): ReactElement {
                     Our Mission
                   </h3>
                   <p className="text-sm text-gray-600 italic leading-relaxed">
-                    "To support residential providers in achieving outstanding outcomes for children 
+                    "To support residential providers in achieving outstanding outcomes for children
                     through robust independent oversight and expert-led compliance support."
                   </p>
                 </blockquote>
-                
+
                 <blockquote className="p-8 bg-brand-navy text-white rounded-xl shadow-lg">
                   <h3 className="font-heading font-bold mb-3 flex items-center gap-2">
                     <Eye className="w-5 h-5 text-brand-teal" />
                     Our Vision
                   </h3>
                   <p className="text-sm text-white/70 italic leading-relaxed">
-                    "To be the most trusted partner for compliance excellence in the children's 
+                    "To be the most trusted partner for compliance excellence in the children's
                     residential care sector across England."
                   </p>
                 </blockquote>
@@ -109,7 +109,7 @@ export default function AboutPage(): ReactElement {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value) => (
-              <article 
+              <article
                 key={value.title}
                 className="bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
               >

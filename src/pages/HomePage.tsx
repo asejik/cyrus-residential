@@ -39,15 +39,15 @@ export default function HomePage(): ReactElement {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section 
+      <section
         className="relative min-h-[85vh] flex items-center bg-brand-navy overflow-hidden"
         aria-labelledby="hero-heading"
       >
         {/* Background Image Overlay */}
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&q=80&w=1600" 
-            alt="" 
+          <img
+            src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&q=80&w=1600"
+            alt=""
             className="w-full h-full object-cover opacity-20"
             aria-hidden="true"
           />
@@ -59,14 +59,14 @@ export default function HomePage(): ReactElement {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-teal/10 border border-brand-teal/20 text-brand-teal text-xs font-bold tracking-widest uppercase">
               Supporting Excellence in Children’s Residential Care
             </div>
-            <h1 
+            <h1
               id="hero-heading"
               className="text-white text-display font-bold leading-tight"
             >
               Professional Consultancy & Compliance Support for Children’s Homes
             </h1>
             <p className="text-white/80 text-xl max-w-2xl leading-relaxed">
-              Elevating the standards of residential care through expert-led inspections, 
+              Elevating the standards of residential care through expert-led inspections,
               strategic consultancy, and rigorous compliance auditing across England.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
@@ -98,16 +98,16 @@ export default function HomePage(): ReactElement {
               </h2>
               <div className="h-1.5 w-20 bg-brand-teal rounded-full" />
               <p className="text-gray-600 text-lg leading-relaxed">
-                At Cyrus Residential Care Consultancy, we understand the immense responsibility of providing 
-                high-quality care for children. Our mission is to support providers in achieving and 
+                At Cyrus Residential Care Consultancy, we understand the immense responsibility of providing
+                high-quality care for children. Our mission is to support providers in achieving and
                 maintaining excellence through independent oversight and expert guidance.
               </p>
               <p className="text-gray-600 text-lg leading-relaxed">
-                With deep specialist knowledge of Ofsted expectations and the Children's Homes Regulations, 
+                With deep specialist knowledge of Ofsted expectations and the Children's Homes Regulations,
                 we provide the clarity and confidence you need to excel in every inspection.
               </p>
-              <Link 
-                to="/about" 
+              <Link
+                to="/about"
                 className="inline-flex items-center gap-2 text-brand-navy font-bold hover:text-brand-teal transition-colors group"
               >
                 Learn more about our mission
@@ -115,9 +115,9 @@ export default function HomePage(): ReactElement {
               </Link>
             </div>
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=1000" 
-                alt="Cozy modern family living room interior representing residential home environment" 
+              <img
+                src="https://images.unsplash.com/photo-1714976326945-b5c432e6d501?q=80&w=1332&?auto=format&fit=crop&q=80&w=1000"
+                alt="Cozy modern family living room interior representing residential home environment"
                 className="rounded-2xl shadow-2xl relative z-10"
               />
               <div className="absolute -top-6 -right-6 w-32 h-32 bg-brand-surface rounded-full z-0" />
@@ -141,7 +141,7 @@ export default function HomePage(): ReactElement {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service) => (
-              <article 
+              <article
                 key={service.title}
                 className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-card hover:-translate-y-2 transition-all duration-300 group"
               >
@@ -152,7 +152,7 @@ export default function HomePage(): ReactElement {
                 <p className="text-gray-600 text-sm leading-relaxed mb-6">
                   {service.description}
                 </p>
-                <Link 
+                <Link
                   to={service.href}
                   className="text-brand-navy text-xs font-bold tracking-widest uppercase inline-flex items-center gap-2 hover:text-brand-teal transition-colors"
                 >
@@ -171,7 +171,7 @@ export default function HomePage(): ReactElement {
           <div className="absolute top-0 right-0 w-96 h-96 bg-brand-teal rounded-full blur-[120px] -mr-48 -mt-48" />
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-teal rounded-full blur-[120px] -ml-48 -mb-48" />
         </div>
-        
+
         <div className="container mx-auto px-6 relative z-10 text-center space-y-8">
           <h2 className="text-white text-h2 font-bold max-w-2xl mx-auto">
             Ready to enhance your home's compliance standards?
