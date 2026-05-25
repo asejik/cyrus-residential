@@ -42,9 +42,14 @@ export default function ContactPage(): ReactElement {
                     </div>
                     Email Us
                   </div>
-                  <a href="mailto:info@cyruscareconsultancy.co.uk" className="text-gray-500 hover:text-brand-teal transition-colors block text-sm break-all">
-                    info@cyruscareconsultancy.co.uk
-                  </a>
+                  <div className="space-y-1">
+                    <a href="mailto:victoria@cyruscareconsultancy.co.uk" className="text-gray-500 hover:text-brand-teal transition-colors block text-sm break-all">
+                      victoria@cyruscareconsultancy.co.uk
+                    </a>
+                    <a href="mailto:info@cyruscareconsultancy.co.uk" className="text-gray-500 hover:text-brand-teal transition-colors block text-sm break-all">
+                      info@cyruscareconsultancy.co.uk
+                    </a>
+                  </div>
                 </div>
 
                 <div className="space-y-3">

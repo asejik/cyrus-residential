@@ -73,6 +73,10 @@ export function Footer(): ReactElement {
           <div className="space-y-6">
             <h3 className="font-heading font-bold text-lg">Get In Touch</h3>
             <div className="space-y-4">
+              <a href="mailto:victoria@cyruscareconsultancy.co.uk" className="flex items-start gap-3 group outline-none">
+                <Mail className="w-5 h-5 text-brand-teal mt-0.5 shrink-0" />
+                <span className="text-white/70 group-hover:text-white transition-colors text-sm break-all">victoria@cyruscareconsultancy.co.uk</span>
+              </a>
               <a href="mailto:info@cyruscareconsultancy.co.uk" className="flex items-start gap-3 group outline-none">
                 <Mail className="w-5 h-5 text-brand-teal mt-0.5 shrink-0" />
                 <span className="text-white/70 group-hover:text-white transition-colors text-sm break-all">info@cyruscareconsultancy.co.uk</span>
